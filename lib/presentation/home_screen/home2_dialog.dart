@@ -46,7 +46,7 @@ class Home2Dialog extends StatelessWidget {
                   ),
                   SizedBox(height: 8.v),
                   Text(
-                    "msg_lorem_ipsum_dolor".tr,
+                    'Reduce dining out to save money on food. Plan your meals and cook in batches to make home-cooking more convenient. This not only saves money but also allows you to eat healthier and control portion sizes.',
                     textAlign: TextAlign.center,
                     style: theme.textTheme.bodyMedium,
                   ),

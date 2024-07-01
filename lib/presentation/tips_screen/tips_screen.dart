@@ -4,6 +4,7 @@ import 'package:app_p_79/core/widgets/app_bar/appbar_title.dart';
 import 'package:app_p_79/core/widgets/app_bar/custom_app_bar.dart';
 import 'package:app_p_79/core/widgets/custom_image_view.dart';
 import 'package:flutter/material.dart';
+import 'package:layout_manager/layout_provider.dart';
 import '../../core/app_export.dart';
 
 const list = [
@@ -32,16 +33,19 @@ class TipsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold(
-        appBar: _buildTopAppBar(context),
-        body: Container(
-          width: double.maxFinite,
-          padding: EdgeInsets.symmetric(
-            horizontal: 14.h,
-            vertical: 20.v,
-          ),
-          child: Column(
-            children: [_buildContentSection(context), SizedBox(height: 4.v)],
+      child: LayoutProvider(
+        backgroundColor: theme.colorScheme.background,
+        responseWidget: Scaffold(
+          appBar: _buildTopAppBar(context),
+          body: Container(
+            width: double.maxFinite,
+            padding: EdgeInsets.symmetric(
+              horizontal: 14.h,
+              vertical: 20.v,
+            ),
+            child: Column(
+              children: [_buildContentSection(context), SizedBox(height: 4.v)],
+            ),
           ),
         ),
       ),

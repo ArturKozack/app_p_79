@@ -45,29 +45,29 @@ class OnboardingOneScreen extends GetWidget {
                   width: double.maxFinite,
                 ),
      
-                Positioned(
-                  left: 40.h,
-                  right: 40.h,
-                  bottom: 50.v,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Text(
-                        "msg_financial_assistant".tr,
-                        style: CustomTextStyles.headlineLargeGray90002,
-                      ),
-                         SizedBox(height: 4.v),
-                  Text(
-                    "msg_plan_a_budget_enter".tr,
+                // Positioned(
+                //   left: 40.h,
+                //   right: 40.h,
+                //   bottom: 50.v,
+                //   child: Column(
+                //     crossAxisAlignment: CrossAxisAlignment.start,
+                //     mainAxisAlignment: MainAxisAlignment.end,
+                //     children: [
+                //       Text(
+                //         "msg_financial_assistant".tr,
+                //         style: CustomTextStyles.headlineLargeGray90002,
+                //       ),
+                //          SizedBox(height: 4.v),
+                //   Text(
+                //     "msg_plan_a_budget_enter".tr,
                      
-                    overflow: TextOverflow.ellipsis,
-                    style: theme.textTheme.bodyMedium,
-                  ),
+                //     overflow: TextOverflow.ellipsis,
+                //     style: theme.textTheme.bodyMedium,
+                //   ),
 
-                    ],
-                  ),
-                ),
+                //     ],
+                //   ),
+                // ),
              
               ],
             ),

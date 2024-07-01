@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyBuea4D9gKhn0Z9kigVXYDGqjur-503ic8</string>
+	<string>AIzaSyATNTDL9hf6TR_I4awTcOJKcIEiYydMfrE</string>
 	<key>GCM_SENDER_ID</key>
-	<string>539168661341</string>
+	<string>51020141181</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.calculateretplan.app</string>
+	<string>com.myfinworkout.trn</string>
 	<key>PROJECT_ID</key>
-	<string>app-78-tala-ios</string>
+	<string>app-79-ace-cash-xpress-ios</string>
 	<key>STORAGE_BUCKET</key>
-	<string>app-78-tala-ios.appspot.com</string>
+	<string>app-79-ace-cash-xpress-ios.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:539168661341:ios:13720b8c694ff8fe1892b4</string>
+	<string>1:51020141181:ios:2bada38ab2eafb92215714</string>
 </dict>
 </plist>

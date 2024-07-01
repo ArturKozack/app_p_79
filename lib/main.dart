@@ -42,7 +42,7 @@ void main() {
     );
 
     await OneSignal.shared
-        .setAppId(Platform.isIOS ? 'a0e5ef70-5d4a-4515-ba80-7cb9c1a19226' : '');
+        .setAppId(Platform.isIOS ? '1ce5e814-f973-4803-8f52-b4ced53541b7' : '');
 
     Logger.init(kReleaseMode ? LogMode.live : LogMode.debug);
     runApp(MyApp());

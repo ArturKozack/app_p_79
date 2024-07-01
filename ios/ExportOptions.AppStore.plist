@@ -10,9 +10,9 @@
 	<string>app-store</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.calculateretplan.app</key>
+		<key>com.myfinworkout.trn</key>
 		<string>AppStore</string>
-		<key>com.calculateretplan.app.OneSignalNotificationServiceExtension</key>
+		<key>com.myfinworkout.trn.OneSignalNotificationServiceExtension</key>
 		<string>OneSignal Extension AppStore</string>
 	</dict>
 	<key>signingCertificate</key>
@@ -22,7 +22,7 @@
 	<key>stripSwiftSymbols</key>
 	<true/>
 	<key>teamID</key>
-	<string>7X9Q4CZ37A</string>
+	<string>RRZUUGH6W6</string>
 	<key>thinning</key>
 	<string>&lt;none&gt;</string>
 	<key>aps-environment</key>
