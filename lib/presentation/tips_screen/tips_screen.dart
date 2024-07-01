@@ -68,7 +68,7 @@ class TipsScreen extends StatelessWidget {
       width: double.maxFinite,
       padding: EdgeInsets.symmetric(
         horizontal: 14.h,
-        vertical: 8.v,
+        vertical: 2.v,
       ),
       child: Stack(
         children: [
@@ -76,13 +76,13 @@ class TipsScreen extends StatelessWidget {
             quarterTurns: 2,
             child: CustomImageView(
               imagePath: ImageConstant.imgGroup9,
-              height: 640.v,
+              height: 600.v,
               width: double.maxFinite,
               fit: BoxFit.fill,
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 60.v),
+            padding: EdgeInsets.only(top: 50.v),
             child: CustomImageView(
               imagePath: ImageConstant.imgImage360x358,
               height: 360.v,
@@ -104,7 +104,7 @@ class TipsScreen extends StatelessWidget {
                 SizedBox(height: 4.v),
                 Text(
                   list.elementAt(Random().nextInt(13)),
-                  style: theme.textTheme.bodyMedium!.copyWith(
+                  style: theme.textTheme.bodySmall!.copyWith(
                     color: appTheme.gray50001,
                   ),
                 ),

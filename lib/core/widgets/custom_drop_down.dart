@@ -143,7 +143,7 @@ class CustomDropDownItemWidget extends StatelessWidget {
     }
 
     return Container(
-      width: 362.adaptSize,
+      width: 352.adaptSize,
       margin: EdgeInsets.only(
         bottom: isForced ? 0 : 4.adaptSize,
         top: isForced ? 0 : 4.adaptSize,
