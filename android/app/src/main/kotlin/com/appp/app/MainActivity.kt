@@ -1,4 +1,4 @@
-package com.retiresaveplanner.app
+package com.personalfincoach.app
 
 import io.flutter.embedding.android.FlutterActivity
 
