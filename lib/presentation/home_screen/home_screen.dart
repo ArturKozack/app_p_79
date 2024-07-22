@@ -173,6 +173,7 @@ class HomeScreen extends EventListener {
           ),
           CustomImageView(
             imagePath: ImageConstant.imgArrowLeft,
+            onTap: () => Get.toNamed(AppRoutes.detailsScreen),
             height: 48.adaptSize,
             width: 48.adaptSize,
           )
@@ -205,8 +206,7 @@ class HomeScreen extends EventListener {
 
   /// Section Widget
   Widget _buildHomeContent(BuildContext context) {
-    return Expanded(
-      child: SingleChildScrollView(
+    return  SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
@@ -217,7 +217,7 @@ class HomeScreen extends EventListener {
             _buildTransactionsList(context),
           ],
         ),
-      ),
+      
     );
   }
 }

@@ -7,13 +7,13 @@ import 'package:flutter/services.dart';
 import '../../../core/app_export.dart';
 
 class AddinformationsectionItemWidget extends StatelessWidget {
-  AddinformationsectionItemWidget(this.value, {Key? key, this.onChanged})
+  AddinformationsectionItemWidget(this.value, {Key? key, this.onChanged, required this.amount})
       : super(
           key: key,
         );
 
   final Enum value;
-
+final int amount;
   final Function(String)? onChanged;
 
   @override
@@ -53,6 +53,7 @@ class AddinformationsectionItemWidget extends StatelessWidget {
           child: CustomTextFormField(
             onChanged: onChanged,
             hintText: "lbl_amount".tr,
+            initialValue: amount.toStringAsFixed(0),
             inputFormatters: [
               ThousandsFormatter(),
               LengthLimitingTextInputFormatter(7),

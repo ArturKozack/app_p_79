@@ -136,7 +136,7 @@ class AppRepository extends ControllerBase with GetTickerProviderStateMixin {
 
     update();
 
-    Get.back();
+
   }
 
   Future<void> addTransaction() async {
@@ -155,9 +155,10 @@ class AppRepository extends ControllerBase with GetTickerProviderStateMixin {
 
     await userBox.put('user', user);
 
-    Get.dialog(Home2Dialog(name: earnedCategory?.name ?? spendCategory!.name));
 
-    // clearCalculator();
+    // Get.dialog(Home2Dialog(name: earnedCategory?.name ?? spendCategory!.name));
+
+    clearCalculator();
 
     // Get.back();
   }

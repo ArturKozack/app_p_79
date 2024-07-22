@@ -1,5 +1,6 @@
 import 'package:app_p_79/presentation/add_tab_container_screen/add_tab_container_screen.dart';
 import 'package:app_p_79/presentation/budget_tab_container_screen/budget_tab_container_screen.dart';
+import 'package:app_p_79/presentation/details_screen/details_screen.dart';
 import 'package:app_p_79/presentation/terms_of_use_screen/terms_of_use_screen.dart';
 
 import '../core/app_export.dart';
@@ -16,6 +17,7 @@ class AppRoutes {
   static const String privacyPolicyScreen = '/privacy_policy_screen';
   static const String termsOfUseScreen = '/terms_screen';
   static const String addScreen = '/add_screen';
+    static const String detailsScreen = '/details_screen';
   static const String addBudgetScreen = '/add_budget_screen';
 
   static const String initialRoute = '/initialRoute';
@@ -28,6 +30,10 @@ class AppRoutes {
     GetPage(
       name: rootScreen,
       page: () => RootScreen(),
+    ),
+        GetPage(
+      name: detailsScreen,
+      page: () => DetailsScreen(),
     ),
     GetPage(
       name: termsOfUseScreen,

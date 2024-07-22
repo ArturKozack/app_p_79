@@ -41,6 +41,8 @@ class AddBudgetForCategoriesPage extends GetWidget<AppRepository> {
                 Get.find<AppRepository>().typeBudOfCredit == TypeOfCredit.Earned
                     ? EarnedCategory.values.elementAt(index)
                     : SpendCategory.values.elementAt(index),
+                    amount:    Get.find<AppRepository>().typeBudOfCredit == TypeOfCredit.Earned
+                    ? model!.getValueErn(EarnedCategory.values.elementAt(index)): model!.getValueSpend(SpendCategory.values.elementAt(index),),
                 onChanged: (p0) {
                   Get.find<AppRepository>().typeBudOfCredit ==
                           TypeOfCredit.Earned

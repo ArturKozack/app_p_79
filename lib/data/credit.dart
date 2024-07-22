@@ -109,6 +109,43 @@ class CreditModel extends HiveObject {
     return totl;
   }
 
+  int  getValueErn(EarnedCategory category) {
+switch (category) {
+  case EarnedCategory.credit:
+    return earlCredit;
+ 
+  case EarnedCategory.salary:
+    return earlSalary;
+  case EarnedCategory.food:
+    return earlBonuses;
+  case EarnedCategory.other:
+   return earlOther;
+}
+  }
+
+    int  getValueSpend(SpendCategory category) {
+switch (category) {
+  case SpendCategory.credit:
+    return spendCredit;
+ 
+
+  case SpendCategory.food:
+  return spendFood;
+  case SpendCategory.entertainment:
+   return spendentr;
+  case SpendCategory.housing:
+  return spendHousing;
+  case SpendCategory.trips:
+    return spendTrips;
+  case SpendCategory.transport:
+return spendTransport;
+  case SpendCategory.cloth:
+  return spendCloth;
+  case SpendCategory.other:
+   return spendother;
+}
+  }
+
   int get totalBalance =>
       earlBonuses +
       earlCredit +
