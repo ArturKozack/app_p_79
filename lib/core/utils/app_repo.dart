@@ -135,8 +135,6 @@ class AppRepository extends ControllerBase with GetTickerProviderStateMixin {
     amountTextFieldController.clear();
 
     update();
-
-
   }
 
   Future<void> addTransaction() async {
@@ -155,12 +153,37 @@ class AppRepository extends ControllerBase with GetTickerProviderStateMixin {
 
     await userBox.put('user', user);
 
+   
 
-    // Get.dialog(Home2Dialog(name: earnedCategory?.name ?? spendCategory!.name));
+    Get.back();
 
-    clearCalculator();
+    if (earnedCategory != null &&
+        user.credit.getValueErn(earnedCategory!) <
+            amountTextFieldController.text.trim().numberFormat) {
 
-    // Get.back();
+              
+      Get.dialog(Home2Dialog(
+        name: earnedCategory!.name,
+        amount: user.credit.getValueErn(earnedCategory!).format.currencyFormat,
+      ));
+
+       clearCalculator();
+      return;
+    }
+
+    if (spendCategory != null &&
+        user.credit.getValueSpend(spendCategory!) <
+            amountTextFieldController.text.trim().numberFormat) {
+
+              
+      Get.dialog(Home2Dialog(
+        name: spendCategory!.name,
+        amount: user.credit.getValueSpend(spendCategory!).format.currencyFormat,
+      ));
+
+       clearCalculator();
+      return;
+    }
   }
 
   Future<void> saveBudget() async {

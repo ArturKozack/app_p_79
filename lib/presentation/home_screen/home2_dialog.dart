@@ -5,8 +5,9 @@ import '../../core/app_export.dart';
 
 class Home2Dialog extends StatelessWidget {
   final String name;
+    final String amount;
 
-  const Home2Dialog({Key? key, required this.name})
+  const Home2Dialog({Key? key, required this.name, required this.amount,})
       : super(
           key: key,
         );
@@ -40,7 +41,7 @@ class Home2Dialog extends StatelessWidget {
                   ),
                   SizedBox(height: 8.v),
                   Text(
-                    "msg_you_have_exceeded".tr,
+                    'You have exceeded the planned amount for the \"${name}\" category.\nYou have set a budget for this category of ${amount}.',
                     textAlign: TextAlign.center,
                     style: CustomTextStyles.titleMediumGray90002,
                   ),
@@ -55,7 +56,7 @@ class Home2Dialog extends StatelessWidget {
                     text: "lbl_ok2".tr,
                     onPressed: () {
                       Get.back();
-                      Get.back();
+                   
                     },
                     margin: EdgeInsets.symmetric(horizontal: 4.h),
                     buttonStyle: CustomButtonStyles.fillPrimaryTL10,
